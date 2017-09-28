@@ -1,0 +1,36 @@
+{
+  "name": "minn",
+  "version": "1.0.2",
+  "description": "\"Quickly find the smallest value in an array: `[1,56,9,1925,586,3]` -> `[1]`",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kysley/minn.git"
+  },
+  "author": {
+    "name": "Evan Kysley",
+    "email": "evan@kysley.com",
+    "url": "kysley.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "array",
+    "smallest",
+    "number",
+    "min"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
