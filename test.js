@@ -7,7 +7,7 @@ test('it gets the lowest value', t => {
 
 test('it throws on invalid', t => {
 	t.throws(() => {
-		m(1);
+		m(1, 2, 0);
 	});
 
 	t.throws(() => {
@@ -32,7 +32,11 @@ test('it works with length of 1 number', t => {
 });
 
 test('it works with negative values', t => {
-	t.is(m([-1, 3]), -1);
+	t.is(m(['-1', '-3', '1', '-2', '-40']), '-40');
+});
+
+test('it works with mixed negative values', t => {
+	t.is(m(['-1', '-3', -50, '-2', '-40']), -50);
 });
 
 test('it works with 1 number and random letters', t => {

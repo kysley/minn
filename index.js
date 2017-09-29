@@ -14,7 +14,7 @@ module.exports = arr => {
 	let valid = 0;
 
 	while (len--) {
-		if (arr[len] < min && !arr[len].isNaN) {
+		if (parseFloat(arr[len]) < parseFloat(min) && !arr[len].isNaN) {
 			valid++;
 			min = arr[len];
 		}
