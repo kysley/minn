@@ -31,6 +31,10 @@ test('it works with length of 1 number', t => {
 	t.is(m([1]), 1);
 });
 
+test('it works with negative values', t => {
+	t.is(m([-1, 3]), -1);
+});
+
 test('it works with 1 number and random letters', t => {
 	t.is(m(['t', 1, 'm', 'a']), 1);
 });
